@@ -5,13 +5,6 @@
   font-family: "Mulish", sans-serif;
 }
 
-section {
-  width: 100%;
-  height: 722px;
-  display: block;
-  background: white;
-}
-
 nav {
   width: 100%;
   justify-content: space-between;
@@ -71,9 +64,14 @@ nav {
   transition: all 0.3s ease;
 }
 
-.content-header {
-  width: auto;
+section {
+  width: 100%;
+  display: block;
+  background: white;
   padding: 100px 150px;
+}
+
+.content-header {
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -82,6 +80,7 @@ nav {
   max-width: 500px;
 }
 .content-header .description-header h1 {
+  position: relative;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -108,6 +107,78 @@ nav {
 }
 .content-header .icon-header img {
   width: 500px;
+}
+
+.content-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 50px;
+  justify-content: space-between;
+}
+.content-service a {
+  text-decoration: none;
+}
+.about-service {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.about-service h1 {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+.about-service hr {
+  width: 100px;
+  height: 3px;
+  background: black;
+}
+.about-service p {
+  padding: 10px 0px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.services {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.services a {
+  color: black;
+  margin-bottom: 30px;
+  box-shadow: 5px 20px 15px 0px rgb(230, 230, 230);
+}
+.services a .container-service {
+  width: 300px;
+  padding: 20px;
+  line-height: 56px;
+}
+.services a .container-service h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.services a .container-service p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+a button {
+  width: 200px;
+  height: 56px;
+  background-color: white;
+  border-radius: 56px;
+  border-color: rgb(81, 180, 212);
+  cursor: pointer;
+  color: rgb(81, 180, 212);
+  font-size: 18px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -145,30 +216,28 @@ nav {
   .navbar li a {
     color: white;
   }
-  .navbar li:first-child a {
-  }
   .burger {
     display: block;
   }
 
-  section .content-header {
+  section {
     padding: 20px;
   }
-  section .content-header .description-header {
+  .content-header .description-header {
     width: 400px;
   }
-  section .content-header .description-header h1 {
+  .content-header .description-header h1 {
     position: absolute;
     font-size: 24px;
     line-height: 30px;
   }
-  section .content-header .description-header p {
+  .content-header .description-header p {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 30px;
     margin-top: 60px;
   }
-  section .content-header .description-header button {
+  .content-header .description-header button {
     width: 150px;
     height: 30px;
   }
