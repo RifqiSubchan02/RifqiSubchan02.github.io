@@ -9,10 +9,11 @@ nav {
   background-color: white;
   position: fixed;
   width: 100%;
+  height: 10%;
   justify-content: space-between;
   align-items: center;
   display: flex;
-  padding: 20px 150px;
+  padding: 0px 150px;
 }
 
 .logo {
@@ -291,7 +292,12 @@ a button {
 }
 
 @media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   nav {
+    top: 0px;
     height: 10%;
     padding: 0px 25px;
     background-color: rgb(81, 180, 212);
@@ -314,8 +320,8 @@ a button {
     justify-content: space-around;
     align-items: center;
     width: 50%;
-    height: 90%;
-    margin-top: 15%;
+    height: 95%;
+    margin-top: 10%;
     transform: translate(100%);
     transition: transform 0.5s ease;
     background-color: rgb(81, 180, 212);
@@ -338,6 +344,9 @@ a button {
   section {
     padding: 20px;
   }
+  .content-header {
+    padding-top: 15%;
+  }
   .content-header .description-header {
     width: 400px;
   }
@@ -349,7 +358,6 @@ a button {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 30px;
-    margin-top: 60px;
   }
   .content-header .description-header button {
     width: 150px;
@@ -358,6 +366,85 @@ a button {
   .content-header .icon-header img {
     width: 180px;
     margin-top: 50px;
+  }
+
+  .content-service .about-service {
+    padding: 20px;
+  }
+  .content-service .about-service h1 {
+    font-size: 24px;
+  }
+  .content-service .about-service hr {
+    width: 40px;
+  }
+  .content-service .about-service p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .content-service .services {
+    padding: 0;
+  }
+  .content-service .services a .container-service {
+    width: 170px;
+  }
+  .content-service .services a .container-service h3 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+  .content-service .services a .container-service p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .content-service a button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .content-providers {
+    justify-content: space-around;
+  }
+  .content-providers .icon-providers img {
+    width: 180px;
+    margin-right: 0px;
+    padding-right: 15px;
+  }
+  .content-providers .description-providers h1 {
+    font-size: 24px;
+  }
+  .content-providers .description-providers hr {
+    width: 40px;
+  }
+  .content-providers .description-providers p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .content-providers .description-providers a button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .content-download .description-download h1 {
+    font-size: 24px;
+  }
+  .content-download .description-download hr {
+    width: 40px;
+  }
+  .content-download .description-download p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .content-download .description-download button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .content-download .icon-download img {
+    width: 180px;
   }
 }
 
